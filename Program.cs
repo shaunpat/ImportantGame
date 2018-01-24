@@ -8,7 +8,30 @@ namespace ImportantGame
 {
     class Program
     {
+        private static List<int> numbers;
+
         static void Main(string[] args)
+        {
+            DoThingTwo();
+
+            DoThingOne();
+        }
+
+        private static void DoThingTwo()
+        {
+            numbers.Add(0);
+            numbers.Add(2);
+            numbers.Add(4);
+            numbers.Add(6);
+            numbers.Add(8);
+
+            foreach (var number in numbers)
+            {
+                Print(number.ToString());
+            }
+        }
+
+        private static void DoThingOne()
         {
             for (int i = 0; i < 10; i++)
             {
