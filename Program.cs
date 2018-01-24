@@ -8,7 +8,7 @@ namespace ImportantGame
 {
     class Program
     {
-        private static List<int> numbers;
+        private static List<int> numbers = new List<int>();
 
         static void Main(string[] args)
         {
