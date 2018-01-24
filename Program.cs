@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +10,10 @@ namespace ImportantGame
     {
         static void Main(string[] args)
         {
-            Print("Game has begun :)");
+            for (int i = 0; i < 10; i++)
+            {
+                Print("Game is executing.." + i);
+            }
         }
 
         static void Print(string message)
