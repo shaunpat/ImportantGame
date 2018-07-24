@@ -1,0 +1,7 @@
+C:\Users\William\source\repos\ApiFun\ApiFun\bin\Debug\ApiFun.exe.config
+C:\Users\William\source\repos\ApiFun\ApiFun\bin\Debug\ApiFun.exe
+C:\Users\William\source\repos\ApiFun\ApiFun\bin\Debug\ApiFun.pdb
+C:\Users\William\source\repos\ApiFun\ApiFun\obj\Debug\ApiFun.csprojAssemblyReference.cache
+C:\Users\William\source\repos\ApiFun\ApiFun\obj\Debug\ApiFun.csproj.CoreCompileInputs.cache
+C:\Users\William\source\repos\ApiFun\ApiFun\obj\Debug\ApiFun.exe
+C:\Users\William\source\repos\ApiFun\ApiFun\obj\Debug\ApiFun.pdb
