@@ -21,11 +21,13 @@ namespace ApiFun
             string InputPath = ConfigurationManager.AppSettings["InputFolder"];
             Print("We are getting input from: " + InputPath);
 
-            string text = System.IO.File.ReadAllText(InputPath + "products.json");
+            string file1 = System.IO.File.ReadAllText(InputPath + "products.json");
+            string file2 = System.IO.File.ReadAllText(InputPath + "characters.json");
             Print("We found some text in our input! ");
-            Print(text);
+            Print(file1);
 
-            Product productFromInput = JsonConvert.DeserializeObject<Product>(text);
+            Product productFromInput = JsonConvert.DeserializeObject<Product>(file1);
+            List<Character> characters = JsonConvert.DeserializeObject<IEnumerable<Character>>(file2) as List<Character>;
         }
 
         public static void Print(string message)
@@ -39,4 +41,19 @@ class Product
 {
     public string ProductId { get; set; }
     public string ProductName { get; set; }
+}
+
+class CharacterList
+{
+    public List<Character> characters { get; set; }
+}
+
+class Character
+{
+    [JsonProperty("CharacterName")]
+    public string CharacterName { get; set; }
+    [JsonProperty("CharacterLevel")]
+    public string CharacterLevel { get; set; }
+    [JsonProperty("CharacterLocation")]
+    public string CharacterLocation{ get; set; }
 }
