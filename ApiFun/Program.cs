@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using Newtonsoft.Json;
 
 namespace ApiFun
 {
@@ -23,6 +24,8 @@ namespace ApiFun
             string text = System.IO.File.ReadAllText(InputPath + "products.json");
             Print("We found some text in our input! ");
             Print(text);
+
+            Product productFromInput = JsonConvert.DeserializeObject<Product>(text);
         }
 
         public static void Print(string message)
