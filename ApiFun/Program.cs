@@ -50,10 +50,7 @@ class CharacterList
 
 class Character
 {
-    [JsonProperty("CharacterName")]
     public string CharacterName { get; set; }
-    [JsonProperty("CharacterLevel")]
     public string CharacterLevel { get; set; }
-    [JsonProperty("CharacterLocation")]
     public string CharacterLocation{ get; set; }
 }
