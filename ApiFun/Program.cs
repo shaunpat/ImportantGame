@@ -6,20 +6,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using Newtonsoft.Json;
+using ApiFun;
 
 namespace ApiFun
 {
     class Program
     {
+        static string InputPath = ConfigurationManager.AppSettings["InputFolder"];
+        static string ExecutablePath = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+
         static void Main(string[] args)
         {
-            Print("Hello and such :)");
-            
-            string ExecutablePath = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-            Print("The program executing right now is: " + ExecutablePath + "\\ApiFun.exe");
-
-            string InputPath = ConfigurationManager.AppSettings["InputFolder"];
-            Print("We are getting input from: " + InputPath);
+            PrintGreetings();            
 
             string file1 = System.IO.File.ReadAllText(InputPath + "products.json");
             string file2 = System.IO.File.ReadAllText(InputPath + "characters.json");
@@ -34,23 +32,12 @@ namespace ApiFun
         {
             Console.WriteLine(message);
         }
+
+        public static void PrintGreetings()
+        {
+            Print("Hello and such :)  Welcome to version 1.1");
+            Print("The program executing right now is: " + ExecutablePath + "\\ApiFun.exe");
+            Print("We are getting input from: " + InputPath);
+        }
     }
-}
-
-class Product
-{
-    public string ProductId { get; set; }
-    public string ProductName { get; set; }
-}
-
-class CharacterList
-{
-    public List<Character> characters { get; set; }
-}
-
-class Character
-{
-    public string CharacterName { get; set; }
-    public string CharacterLevel { get; set; }
-    public string CharacterLocation{ get; set; }
 }
