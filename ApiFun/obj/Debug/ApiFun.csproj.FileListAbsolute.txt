@@ -5,3 +5,10 @@ C:\Users\William\source\repos\ApiFun\ApiFun\obj\Debug\ApiFun.csprojAssemblyRefer
 C:\Users\William\source\repos\ApiFun\ApiFun\obj\Debug\ApiFun.csproj.CoreCompileInputs.cache
 C:\Users\William\source\repos\ApiFun\ApiFun\obj\Debug\ApiFun.exe
 C:\Users\William\source\repos\ApiFun\ApiFun\obj\Debug\ApiFun.pdb
+C:\1. Work\github.com\wcam\ImportantGame\ApiFun\bin\Debug\ApiFun.exe.config
+C:\1. Work\github.com\wcam\ImportantGame\ApiFun\bin\Debug\ApiFun.exe
+C:\1. Work\github.com\wcam\ImportantGame\ApiFun\bin\Debug\ApiFun.pdb
+C:\1. Work\github.com\wcam\ImportantGame\ApiFun\obj\Debug\ApiFun.csprojAssemblyReference.cache
+C:\1. Work\github.com\wcam\ImportantGame\ApiFun\obj\Debug\ApiFun.csproj.CoreCompileInputs.cache
+C:\1. Work\github.com\wcam\ImportantGame\ApiFun\obj\Debug\ApiFun.exe
+C:\1. Work\github.com\wcam\ImportantGame\ApiFun\obj\Debug\ApiFun.pdb
